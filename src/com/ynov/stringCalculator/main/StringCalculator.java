@@ -5,7 +5,7 @@ public class StringCalculator {
         if (numbers.isEmpty())
             return 0;
         else if (numbers.contains(",")) {
-            String[] split = numbers.split(",|\n");
+            String[] split = numbers.split("[,\n]");
             for (String string: split
             ) {
                 result += convert(string);
