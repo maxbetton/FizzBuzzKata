@@ -1,6 +1,6 @@
 public class StringCalculator {
 
-    public String add(String number) {
-        return number;
+    public int add(String number) {
+        return 0;
     }
 }
