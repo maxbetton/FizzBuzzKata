@@ -1,5 +1,3 @@
-package com.ynov.main;
-
 public class FizzBuzz {
 
     public static void main(String[] args) {
@@ -7,5 +5,6 @@ public class FizzBuzz {
     }
 
     public String check(int number) {
+        return "1";
     }
 }

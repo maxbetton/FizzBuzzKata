@@ -1,18 +1,15 @@
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-import com.ynov.main.Main;
 
-import static org.junit.jupiter.api.Assertions.*;
+class TestFizzBuzz {
+    FizzBuzz fizzBuzz = new FizzBuzz();
 
-class MainTest {
-
-    @org.junit.jupiter.api.Test
+    @Test
     void main() {
     }
 
-@Test
-    public void shouldPrintFizzIfDividedByThree() {
-    Main main = new Main();
-    assertEquals()
-
-}
+    @Test
+    public void testWithNumberOne() {
+        Assertions.assertEquals("1",fizzBuzz.check(1));
+    }
 }
