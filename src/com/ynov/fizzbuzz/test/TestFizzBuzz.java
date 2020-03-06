@@ -1,6 +1,3 @@
-package com.ynov.fizzbuzz.test;
-
-import com.ynov.fizzbuzz.main.FizzBuzz;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
