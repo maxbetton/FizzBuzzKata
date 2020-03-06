@@ -23,13 +23,21 @@ public class StringCalculator {
 
     private static String[] tokenize(String numbers) {
         if (numbers.startsWith("//")) {
-            Matcher m = Pattern.compile("//(.)\n(.*)").matcher(numbers);
-            m.matches();
-            String customDelimiter = m.group(1);
-            String resultNumber = m .group(2);
-            return resultNumber.split(customDelimiter);
+            return splitUsingCustomDelimiter(numbers);
         }
+        return splitUsingNewLineAndCommas(numbers);
+    }
+
+    private static String[] splitUsingNewLineAndCommas(String numbers) {
         String[] tokens = numbers.split(",|\n");
         return tokens;
+    }
+
+    private static String[] splitUsingCustomDelimiter(String numbers) {
+        Matcher m = Pattern.compile("//(.)\n(.*)").matcher(numbers);
+        m.matches();
+        String customDelimiter = m.group(1);
+        String resultNumber = m .group(2);
+        return resultNumber.split(customDelimiter);
     }
 }
