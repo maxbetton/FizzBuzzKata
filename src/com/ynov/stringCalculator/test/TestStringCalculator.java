@@ -1,6 +1,8 @@
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
+import static org.junit.jupiter.api.Assertions.fail;
+
 public class TestStringCalculator {
     private StringCalculator stringCalculator = new StringCalculator();
 
@@ -32,5 +34,15 @@ public class TestStringCalculator {
     @Test
     void shouldAcceptCustomDelimiter() {
         Assertions.assertEquals(3, stringCalculator.add("//;\n1;2"));
+    }
+
+    @Test
+    void shouldRaiseExceptionOnNegative() {
+        try {
+            stringCalculator.add("-1,2,3");
+            fail("Negative not allowed");
+        } catch (RuntimeException e) {
+            //o
+        }
     }
 }
