@@ -6,10 +6,12 @@
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/com/ynov/main" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/com/ynov/test" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/com/ynov/leapyears/main" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/com/ynov/leapyears/test" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/com/ynov/leapyear/main" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/com/ynov/leapyear/test" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/src/com/ynov/fizzbuzz/main" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/com/ynov/fizzbuzz/test" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/com/ynov/stringCalculator/main" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/com/ynov/stringCalculator/test" isTestSource="true" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
