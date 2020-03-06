@@ -23,4 +23,9 @@ public class TestStringCalculator {
     void shouldReturnSumMultipleNumber() {
         Assertions.assertEquals(6, stringCalculator.add("1,2,3"));
     }
+
+    @Test
+    void shouldAcceptNewLineAsValidDelimiter() {
+        Assertions.assertEquals(6, stringCalculator.add("1,2\n3"));
+    }
 }
