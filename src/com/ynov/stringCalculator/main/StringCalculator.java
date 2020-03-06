@@ -12,7 +12,7 @@ public class StringCalculator {
             for (String string: split
             ) {
                 if (Integer.parseInt(string) < 0 )
-                    throw new RuntimeException();
+                    throw new RuntimeException("Negative not allowed : " + string);
                 result += convert(string);
             }
             return result;
