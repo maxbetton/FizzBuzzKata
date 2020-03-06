@@ -17,4 +17,10 @@ class TestFizzBuzz {
     public void testWithNumberTwo() {
         Assertions.assertEquals("2",fizzBuzz.check(2));
     }
+
+    @Test
+    public void testWithNumberThree() {
+        Assertions.assertEquals("Fizz",fizzBuzz.check(3));
+    }
+
 }
