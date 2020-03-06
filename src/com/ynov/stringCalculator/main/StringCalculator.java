@@ -11,6 +11,8 @@ public class StringCalculator {
             String[] split = tokenize(numbers);
             for (String string: split
             ) {
+                if (Integer.parseInt(string) < 0 )
+                    throw new RuntimeException();
                 result += convert(string);
             }
             return result;
