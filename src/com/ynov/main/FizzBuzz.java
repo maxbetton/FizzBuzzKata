@@ -5,6 +5,6 @@ public class FizzBuzz {
     }
 
     public String check(int number) {
-        return "1";
+        return String.valueOf(number);
     }
 }
