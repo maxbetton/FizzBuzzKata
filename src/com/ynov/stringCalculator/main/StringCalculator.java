@@ -8,11 +8,16 @@ public class StringCalculator {
             String[] split = numbers.split(",");
             for (String string: split
             ) {
-                result += Integer.parseInt(string);
+                result += convert(string);
             }
             return result;
         }
         else
-            return Integer.parseInt(numbers);
+            return convert(numbers);
     }
+
+    public Integer convert(String s) {
+        return Integer.parseInt(s);
+    }
+
 }
