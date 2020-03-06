@@ -28,4 +28,9 @@ public class TestStringCalculator {
     void shouldAcceptNewLineAsValidDelimiter() {
         Assertions.assertEquals(6, stringCalculator.add("1,2\n3"));
     }
+
+    @Test
+    void shouldAcceptCustomDelimiter() {
+        Assertions.assertEquals(3, stringCalculator.add("//;\n1;2"));
+    }
 }
