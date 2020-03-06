@@ -23,4 +23,8 @@ class TestFizzBuzz {
         Assertions.assertEquals("Fizz",fizzBuzz.check(3));
     }
 
+    @Test
+    public void testBuzz() {
+        Assertions.assertEquals("Buzz",fizzBuzz.check(5));
+    }
 }
