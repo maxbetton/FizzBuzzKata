@@ -6,7 +6,11 @@ public class TestStringCalculator {
 
     @Test
     void shouldReturnEmptyString() {
-        Assertions.assertEquals(0,stringCalculator.add(""));
+        Assertions.assertEquals(0, stringCalculator.add(""));
     }
 
+    @Test
+    void shouldReturnOne() {
+        Assertions.assertEquals(1, stringCalculator.add("1"));
+    }
 }
