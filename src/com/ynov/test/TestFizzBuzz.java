@@ -19,7 +19,7 @@ class TestFizzBuzz {
     }
 
     @Test
-    public void testWithNumberThree() {
+    public void testFizz() {
         Assertions.assertEquals("Fizz",fizzBuzz.check(3));
     }
 
