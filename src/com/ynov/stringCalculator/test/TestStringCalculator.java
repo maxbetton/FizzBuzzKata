@@ -18,4 +18,9 @@ public class TestStringCalculator {
     void shouldReturnSumOnTwoNumbersDelimitedByComma() {
         Assertions.assertEquals(3, stringCalculator.add("1,2"));
     }
+
+    @Test
+    void shouldReturnSumMultipleNumber() {
+        Assertions.assertEquals(6, stringCalculator.add("1,2,3"));
+    }
 }
